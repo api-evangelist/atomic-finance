@@ -1,0 +1,160 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/org/atomicfinance + https://github.com/atomicfinance
+notes: >-
+  Atomic.Finance ships no REST API; its public developer surface is a set of
+  open-source Bitcoin / Discreet Log Contract (DLC) libraries published to npm
+  under two first-party scopes: @atomicfinance/* (the Bitcoin Abstraction Layer
+  SDK, monorepo bitcoin-abstraction-layer) and @node-dlc/* (the DLC protocol
+  monorepo node-dlc). All at latest as of the probe date; the company itself is
+  reported out of business but the packages remain published.
+packages:
+  # --- @atomicfinance/* — Bitcoin Abstraction Layer (SDK umbrella + providers) ---
+  - language: javascript
+    registry: npm
+    name: "@atomicfinance/client"
+    version: 4.3.3
+    url: https://www.npmjs.com/package/@atomicfinance/client
+    install: npm install @atomicfinance/client
+    description: Bitcoin Abstraction Layer client (SDK umbrella).
+    repo: https://github.com/atomicfinance/bitcoin-abstraction-layer
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@atomicfinance/provider"
+    version: 4.3.3
+    url: https://www.npmjs.com/package/@atomicfinance/provider
+    install: npm install @atomicfinance/provider
+    description: Bitcoin Abstraction Layer base provider.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@atomicfinance/bitcoin-dlc-provider"
+    version: 4.3.3
+    url: https://www.npmjs.com/package/@atomicfinance/bitcoin-dlc-provider
+    install: npm install @atomicfinance/bitcoin-dlc-provider
+    description: Discreet Log Contract provider for the Bitcoin Abstraction Layer.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@atomicfinance/bitcoin-wallet-provider"
+    version: 4.3.3
+    url: https://www.npmjs.com/package/@atomicfinance/bitcoin-wallet-provider
+    install: npm install @atomicfinance/bitcoin-wallet-provider
+    description: Bitcoin wallet provider for the Bitcoin Abstraction Layer.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@atomicfinance/bitcoin-cfd-provider"
+    version: 4.3.3
+    url: https://www.npmjs.com/package/@atomicfinance/bitcoin-cfd-provider
+    install: npm install @atomicfinance/bitcoin-cfd-provider
+    description: Crypto Finance Development Kit (cfd) provider.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@atomicfinance/bitcoin-esplora-api-provider"
+    version: 4.3.3
+    url: https://www.npmjs.com/package/@atomicfinance/bitcoin-esplora-api-provider
+    install: npm install @atomicfinance/bitcoin-esplora-api-provider
+    description: Esplora block-explorer API provider.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@atomicfinance/bitcoin-rpc-provider"
+    version: 4.3.3
+    url: https://www.npmjs.com/package/@atomicfinance/bitcoin-rpc-provider
+    install: npm install @atomicfinance/bitcoin-rpc-provider
+    description: bitcoind JSON-RPC provider.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@atomicfinance/types"
+    version: 4.3.3
+    url: https://www.npmjs.com/package/@atomicfinance/types
+    install: npm install @atomicfinance/types
+    description: Shared TypeScript types for the Bitcoin Abstraction Layer.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@atomicfinance/bitcoin-networks"
+    version: 2.5.1
+    url: https://www.npmjs.com/package/@atomicfinance/bitcoin-networks
+    install: npm install @atomicfinance/bitcoin-networks
+    description: bitcoinjs-lib network definitions extension.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@atomicfinance/errors"
+    version: 4.3.3
+    url: https://www.npmjs.com/package/@atomicfinance/errors
+    install: npm install @atomicfinance/errors
+    description: Error classes for the Bitcoin Abstraction Layer.
+    official: true
+  # --- @node-dlc/* — DLC protocol monorepo (node-dlc) ---
+  - language: javascript
+    registry: npm
+    name: "@node-dlc/messaging"
+    version: 1.2.1
+    url: https://www.npmjs.com/package/@node-dlc/messaging
+    install: npm install @node-dlc/messaging
+    description: DLC messaging protocol implementation.
+    repo: https://github.com/atomicfinance/node-dlc
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@node-dlc/core"
+    version: 1.2.1
+    url: https://www.npmjs.com/package/@node-dlc/core
+    install: npm install @node-dlc/core
+    description: DLC core primitives.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@node-dlc/bitcoin"
+    version: 1.2.1
+    url: https://www.npmjs.com/package/@node-dlc/bitcoin
+    install: npm install @node-dlc/bitcoin
+    description: DLC bitcoin transaction utilities.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@node-dlc/wire"
+    version: 1.2.1
+    url: https://www.npmjs.com/package/@node-dlc/wire
+    install: npm install @node-dlc/wire
+    description: Lightning Network wire protocol.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@node-dlc/noise"
+    version: 1.2.1
+    url: https://www.npmjs.com/package/@node-dlc/noise
+    install: npm install @node-dlc/noise
+    description: BOLT 8 Lightning Network Noise protocol socket.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@node-dlc/crypto"
+    version: 1.2.1
+    url: https://www.npmjs.com/package/@node-dlc/crypto
+    install: npm install @node-dlc/crypto
+    description: Lightning cryptography utilities.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@node-dlc/bitcoind"
+    version: 1.2.1
+    url: https://www.npmjs.com/package/@node-dlc/bitcoind
+    install: npm install @node-dlc/bitcoind
+    description: bitcoind JSON-RPC and ZMQ client.
+    official: true
+  - language: javascript
+    registry: npm
+    name: schnorr-adaptor-points
+    version: 0.1.0
+    url: https://www.npmjs.com/package/schnorr-adaptor-points
+    install: npm install schnorr-adaptor-points
+    description: JavaScript implementation of Schnorr adaptor points (repo atomicfinance/schnorr-adaptor-points).
+    repo: https://github.com/atomicfinance/schnorr-adaptor-points
+    official: true

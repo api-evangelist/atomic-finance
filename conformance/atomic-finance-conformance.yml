@@ -1,0 +1,38 @@
+generated: '2026-07-18'
+method: derived
+source: https://github.com/atomicfinance (repo + npm package descriptions)
+notes: >-
+  Atomic.Finance publishes no REST/OpenAPI surface; conformance here is asserted
+  against the Bitcoin / DLC / Lightning standards its open-source libraries
+  implement, derived from the atomicfinance GitHub org and the @atomicfinance/*
+  and @node-dlc/* npm package descriptions. No published compliance program
+  (SOC 2 / ISO 27001 / PCI), so no Compliance pointer is emitted.
+standards:
+  - id: dlc-discreet-log-contracts
+    conforms: true
+    evidence: >-
+      node-dlc implements the Discreet Log Contract protocol (@node-dlc/messaging
+      "DLC Messaging Protocol", @node-dlc/core "DLC Core"); cfd-dlc repos.
+  - id: bip-340-schnorr-signatures
+    conforms: true
+    evidence: >-
+      schnorr-adaptor-points implements Schnorr adaptor points; DLC oracle
+      attestations rely on BIP-340 Schnorr signatures.
+  - id: adaptor-signatures
+    conforms: true
+    evidence: schnorr-adaptor-points package; adaptor signatures underpin DLC settlement.
+  - id: bolt-lightning-network
+    conforms: true
+    evidence: >-
+      @node-dlc/wire "Lightning Network Wire Protocol" and @node-dlc/noise
+      "BOLT 8 Lightning Network Noise Protocol Socket".
+  - id: bitcoin-core-json-rpc
+    conforms: true
+    evidence: "@node-dlc/bitcoind and @atomicfinance/bitcoin-rpc-provider speak bitcoind JSON-RPC/ZMQ."
+  - id: esplora-block-explorer-api
+    conforms: true
+    evidence: "@atomicfinance/bitcoin-esplora-api-provider consumes the Esplora HTTP API."
+  - id: oauth2
+    conforms: false
+  - id: rfc9457-problem-details
+    conforms: false

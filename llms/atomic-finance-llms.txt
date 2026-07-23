@@ -1,0 +1,29 @@
+# Atomic.Finance
+
+> Atomic.Finance was a non-custodial, Bitcoin-native financial platform (Toronto, founded 2018) building options and hedging products directly on Bitcoin using Discreet Log Contracts (DLCs) — no custody, wrapping, or swapping. The company is reported out of business, but its open-source DLC and Bitcoin tooling remains published on GitHub and npm.
+
+## Company
+- Website: https://atomic.finance/ (currently offline)
+- GitHub organization: https://github.com/atomicfinance
+- Focus: non-custodial Bitcoin options / hedging via Discreet Log Contracts (DLCs)
+
+## Open-source libraries (SDKs)
+- Bitcoin Abstraction Layer (SDK): https://github.com/atomicfinance/bitcoin-abstraction-layer
+- @atomicfinance/client (npm): https://www.npmjs.com/package/@atomicfinance/client
+- @atomicfinance/bitcoin-dlc-provider (npm): https://www.npmjs.com/package/@atomicfinance/bitcoin-dlc-provider
+- node-dlc (DLC protocol in Node.js): https://github.com/atomicfinance/node-dlc
+- @node-dlc/messaging (npm): https://www.npmjs.com/package/@node-dlc/messaging
+- @node-dlc/core (npm): https://www.npmjs.com/package/@node-dlc/core
+- schnorr-adaptor-points (npm): https://www.npmjs.com/package/schnorr-adaptor-points
+- tabconf-dlc-wallet-starter: https://github.com/atomicfinance/tabconf-dlc-wallet-starter
+
+## Standards implemented
+- Discreet Log Contracts (DLC)
+- BIP-340 Schnorr signatures + adaptor signatures
+- BOLT / Lightning Network wire + Noise (BOLT 8)
+- Bitcoin Core JSON-RPC; Esplora block-explorer API
+
+## Artifacts (API Evangelist)
+- Packages: https://raw.githubusercontent.com/api-evangelist/atomic-finance/refs/heads/main/packages/atomic-finance-packages.yml
+- Conformance: https://raw.githubusercontent.com/api-evangelist/atomic-finance/refs/heads/main/conformance/atomic-finance-conformance.yml
+- Domain security: https://raw.githubusercontent.com/api-evangelist/atomic-finance/refs/heads/main/security/atomic-finance-domain-security.yml

@@ -1,9 +1,29 @@
 aid: atomic-finance
 name: Atomic Finance
-description: 'Atomic Finance is a company surfaced as a portfolio company of initialized-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Atomic.Finance was a non-custodial, Bitcoin-native financial platform based in
+  Toronto, Canada (founded 2018) that built options-trading and hedging products
+  directly on Bitcoin using Discreet Log Contracts (DLCs) — with no custody, no
+  wrapping, and no swapping. Rather than a hosted REST API, the company's public
+  developer surface is a body of open-source Bitcoin and DLC tooling published to
+  GitHub (the atomicfinance organization, 34 repositories) and to npm under two
+  first-party scopes: @atomicfinance/* (the Bitcoin Abstraction Layer SDK) and
+  @node-dlc/* (a Node.js implementation of the DLC and Lightning wire protocols).
+  The company is reported out of business, but the libraries remain published and
+  implement DLC, BIP-340 Schnorr/adaptor signatures, and BOLT Lightning standards.
 url: https://raw.githubusercontent.com/api-evangelist/atomic-finance/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/70004651?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,10 +32,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Crypto
+- Bitcoin
+- Discreet Log Contracts
+- DLC
+- Non-Custodial
+- Options Trading
+- Open Source
+- Lightning Network
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +52,22 @@ maintainers:
 common:
 - type: Website
   url: https://atomic.finance/
+- type: GitHubOrganization
+  url: https://github.com/atomicfinance
+- type: SourceCode
+  url: https://github.com/atomicfinance/node-dlc
+- type: Packages
+  url: packages/atomic-finance-packages.yml
+- type: SDKs
+  url: packages/atomic-finance-packages.yml
+- type: Conformance
+  url: conformance/atomic-finance-conformance.yml
+- type: DomainSecurity
+  url: security/atomic-finance-domain-security.yml
+- type: LLMsTxt
+  url: llms/atomic-finance-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
