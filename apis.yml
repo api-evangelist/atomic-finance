@@ -12,6 +12,18 @@ description: >-
   The company is reported out of business, but the libraries remain published and
   implement DLC, BIP-340 Schnorr/adaptor signatures, and BOLT Lightning standards.
 url: https://raw.githubusercontent.com/api-evangelist/atomic-finance/refs/heads/main/apis.yml
+deliveryModel:
+  model: self-hosted
+  license: GPL-3.0
+  open_source: true
+  commercial: false
+  callable_host: false
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
